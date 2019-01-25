@@ -15,5 +15,5 @@ testing set: 10
 
 RMSE seems to be really good enough to trust for anomaly detection especially.
 
-Note: Before an attempt inmade to run the code, please be aware the training of the two LSTMs have taken nearly 15 hrs.
+Note: Before an attempt is made to run the code, please be aware the training of the two LSTMs can take upto 15 hrs.
 

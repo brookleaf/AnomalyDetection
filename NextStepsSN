@@ -1,0 +1,15 @@
+Part 2 In a few paragraphs please describe what you would do next, given that after a while a large number of boilers will be monitored and individual patterns of behaviour identified, in order that we can apply a model to a new boiler without seeing any data from it or knowing anything about its usual operating behaviour. 
+
+
+First the protocol to onboard a new unseen boiler will depend on features/characteristics that define boiler itself e.g. max pressure, manufacturing features.
+Every boiler goes through an onboarding procedure that captures data about the boiler itself.
+
+On these above said features we would then build a model that clusters the boiler into its best group of already modelled boilers.
+Now that we identified the best group/cluster for our new boiler, we would then pick the model of the boiler which was essentially
+the centroid in our group thus identified. The understanding is that the centroid boiler will effectively have been modelled based of
+an average of the time series of all the boilers in that group.
+
+The model of the centroid boiler is then put into effect for prediction of outliers for the new boiler until we have enough data thats relevant from the boiler itself.
+
+Having collected suffienct data from the new boiler, we can either build a model thats specific to it or we could revisit clustering the timeseries data from the boiler against the remaining timeseries data of the other boilers to update the centroids.
+
